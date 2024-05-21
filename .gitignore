@@ -1,4 +1,4 @@
-.gitignore
+/.gitignore
 /erd.png
 /erdiagram.png
 /Figure_1.png
@@ -7,6 +7,6 @@
 /Sin título-1.png
 /Sin título-2.png
 /Sin título-3.png
-ability.js
-test.erd
-test.py
+/ability.js
+/test.erd
+/test.py
