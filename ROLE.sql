@@ -1,5 +1,4 @@
 CREATE ROLE professor WITH LOGIN;
-GRANT CREATE, CONNECT ON DATABASE Pokemon TO professor;
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO professor;
 GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO professor;
 GRANT ALL PRIVILEGES ON ALL PROCEDURES IN SCHEMA public TO professor;
@@ -12,7 +11,7 @@ GRANT SELECT, INSERT, UPDATE ON TABLE species TO breeder;
 GRANT SELECT, INSERT, UPDATE ON TABLE pokemon_type TO breeder;
 GRANT SELECT, INSERT, UPDATE ON TABLE pokemon_ability TO breeder;
 GRANT SELECT, INSERT, UPDATE ON TABLE pokemon_stat TO breeder;
-GRANT EXECUTE ON FUNCTION type_change, update_pokemon_weight_and_height TO breeder;
+GRANT EXECUTE ON PROCEDURE type_change, update_pokemon_weight_and_height TO breeder;
 
 
 CREATE ROLE professors_assistant WITH LOGIN;
@@ -28,6 +27,11 @@ GRANT SELECT ON TABLE ability TO bug_catcher;
 GRANT SELECT ON TABLE game TO bug_catcher;
 GRANT SELECT ON TABLE pokedex TO bug_catcher;
 
+CREATE USER oak PASSWORD 'memolanlospokes';
+CREATE USER red PASSWORD 'soyelchampion';
+CREATE USER toni PASSWORD 'elgobiernomeroba';
+CREATE USER alex PASSWORD 'mepasaoeljuego';
+CREATE USER pingo PASSWORD 'miramimetapod'
 
 GRANT professor TO oak;
 GRANT breeder TO red;
